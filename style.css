@@ -8,14 +8,13 @@ body {
 }
 
 .left-panel {
-    z-index:0;
+    z-index: 0;
 }
 
 .right-panel {
     z-index: 1;
-    display: flex;
-    position: absolute;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 1);
+    width: 10px;
 }
 
 .background-img > img {
@@ -67,4 +66,14 @@ form {
     left: 20em;
     top: 20em;
     font-size: 1.5em;
+}
+
+.containing {
+    display: flex;
+    position: relative;
+}
+
+form > button {
+    background-color: #596D48;
+    color: white;
 }
