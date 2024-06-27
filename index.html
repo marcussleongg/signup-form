@@ -19,42 +19,48 @@
         <div class="right-panel">
             <h2>This is not a real online service! It's just a practice signup form as part of The Odin Project's curriculum.<br \><br \>Try signing up like it's a normal form!</h2>
             <form method="post">
-                <div id="left-form">
-                    <div>
-                        <label for="firstname">FIRST NAME</label>
-                        <input type="text" id="firstname" name="firstname" placeholder=" " minlength="1" required />
-                        <span></span>
+                <div id="inputs">
+                    <div id="left-form">
+                        <div>
+                            <label for="firstname">FIRST NAME</label>
+                            <input type="text" id="firstname" name="firstname" placeholder=" " minlength="1" required />
+                            <span></span>
+                        </div>
+                        <div>
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email" placeholder=" " required />
+                            <span></span>
+                        </div>
+                        <div>
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" name="password" placeholder=" " minlength="8" required />
+                            <span></span>
+                        </div>
                     </div>
-                    <div>
-                        <label for="email">EMAIL</label>
-                        <input type="email" id="email" name="email" placeholder=" " required />
-                        <span></span>
-                    </div>
-                    <div>
-                        <label for="password">PASSWORD</label>
-                        <input type="password" id="password" name="password" placeholder=" " minlength="8" required />
-                        <span></span>
-                    </div>
-                </div>
-                <div id="right-form">
-                    <div>
-                        <label for="lastname">LAST NAME</label>
-                        <input type="text" id="lastname" name="lastname" />
-                    </div>
-                    <div>
-                        <label for="phone">PHONE NUMBER</label>
-                        <input type="tel" id="phone" name="phone" placeholder=" " pattern="[0-9].{8,}" />
-                    </div>
-                    <div>
-                        <label for="cfmpassword">CONFIRM PASSWORD</label>
-                        <input type="password" id="cfmpassword" name="cfmpassword" placeholder=" " minlength="8" required />
-                        <span></span>
+                    <div id="right-form">
+                        <div>
+                            <label for="lastname">LAST NAME</label>
+                            <input type="text" id="lastname" name="lastname" />
+                        </div>
+                        <div>
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="tel" id="phone" name="phone" placeholder=" " minlength="1" pattern="[0-9].{8,}" required/>
+                            <span></span>
+                        </div>
+                        <div>
+                            <label for="cfmpassword">CONFIRM PASSWORD</label>
+                            <input type="password" id="cfmpassword" name="cfmpassword" placeholder=" " minlength="8" required />
+                            <span></span>
+                        </div>
                     </div>
                 </div>
                 <div>
                     <button type="submit">Create Account</button>
                 </div>
             </form>
+            <div id="login">
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
         </div>
     </div>
 </body>

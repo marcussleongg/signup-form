@@ -86,26 +86,32 @@ form {
     width: 100%;
     left: 0;
     top: 0;
-    font-size: 1.5em;
-    display: flex;
+    font-size: 1em;
+    margin-top: -7em;
 }
 
-.containing {
+#inputs {
     display: flex;
     position: relative;
+    justify-content: space-between;
 }
 
-form > button {
+button {
     background-color: #596D48;
     color: white;
+    width: 35%;
+    height: 2.5em;
+    border: 0;
+    font-weight: bold;
 }
 
 input {
-    width: 100%;
-    padding: 0;
+    width: 80%;
+    padding: 0.4em;
     border: 0;
     box-sizing: border-box;
     border: black 2px solid;
+    font-size: 1em;
 }
 
 #firstname:placeholder-shown, #email:placeholder-shown, #password:placeholder-shown, #cfmpassword:placeholder-shown, #phone:placeholder-shown {
@@ -130,7 +136,7 @@ input:invalid:not(:focus) {
 }
 
 #left-form div, #right-form div {
-    margin-bottom: 5px;
+    margin-bottom: 1em;
     display: flex;
     flex-flow: row wrap;
 }
@@ -142,9 +148,18 @@ input + span {
 input:required + span::after {
     content: "required";
     position: absolute;
-    top: -22px;
-    left: -55px;
+    top: -15px;
+    right: 0;
     font-size: 0.7em;
     background-color: black;
     color: white;
+}
+
+#login a {
+    color: #596D48;
+    text-decoration: none;
+}
+
+#login {
+    margin-top: -7em;
 }
