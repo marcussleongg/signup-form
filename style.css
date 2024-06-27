@@ -79,15 +79,11 @@ form > button {
 }
 
 input {
-    width: 200px;
+    width: 100%;
     padding: 0;
     border: 0;
     box-sizing: border-box;
     border: black 2px solid;
-}
-
-#password:invalid {
-    border-color: red;
 }
 
 input:placeholder-shown {
@@ -95,14 +91,14 @@ input:placeholder-shown {
     border-color: black !important;
 }
 
-#email:invalid:not(:focus) {
+#firstname:invalid:not(:focus), #email:invalid:not(:focus), #password:invalid:not(:focus), #cfmpassword:invalid:not(:focus) {
     border: red 2px solid;
-    background-color: rgba(255, 0, 0, 0.5);
+    background-color: rgba(255, 0, 0, 0.3);
 }
 
-#email:valid {
+#firstname:valid, #email:valid, #password:valid, #cfmpassword:valid {
     border: green 2px solid;
-    background-color: rgba(0, 255, 0, 0.5)
+    background-color: rgba(0, 255, 0, 0.3)
 }
 
 #left-form div, #right-form div {
