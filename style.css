@@ -91,12 +91,12 @@ input:placeholder-shown {
     border-color: black !important;
 }
 
-#firstname:invalid:not(:focus), #email:invalid:not(:focus), #password:invalid:not(:focus), #cfmpassword:invalid:not(:focus) {
+#firstname:invalid:not(:focus), #email:invalid:not(:focus), #password:invalid:not(:focus), #cfmpassword:invalid:not(:focus), #phone:invalid:not(:focus) {
     border: red 2px solid;
     background-color: rgba(255, 0, 0, 0.3);
 }
 
-#firstname:valid, #email:valid, #password:valid, #cfmpassword:valid {
+#firstname:valid, #email:valid, #password:valid, #cfmpassword:valid, #phone:valid {
     border: green 2px solid;
     background-color: rgba(0, 255, 0, 0.3)
 }
